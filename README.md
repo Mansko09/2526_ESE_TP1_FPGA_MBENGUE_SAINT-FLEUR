@@ -58,4 +58,6 @@ Voici notre chenillard
 
 https://github.com/user-attachments/assets/13af2a37-8c67-4c30-ba2a-02d5275525b1
 
+## Petit projet : Ecran magique
+### Gestion des encodeurs 
 
