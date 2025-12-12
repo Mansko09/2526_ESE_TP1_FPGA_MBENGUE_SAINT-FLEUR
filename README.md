@@ -39,3 +39,8 @@ Ce code fonctionne en logique inverse. On le modifie donc pour que la Led s'allu
 
 <img width="499" height="488" alt="image" src="https://github.com/user-attachments/assets/f9500782-cc76-4261-a21a-eb3d43ffa6a9" />
 
+
+https://github.com/user-attachments/assets/0d36cc00-006d-4b81-8d19-2c59da1fe209
+<img width="483" height="208" alt="image" src="https://github.com/user-attachments/assets/387b3933-288c-4c04-957c-c4bd5cf8a752" />
+
+
