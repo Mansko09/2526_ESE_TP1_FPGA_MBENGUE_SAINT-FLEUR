@@ -36,3 +36,6 @@ Ce code fonctionne en logique inverse. On le modifie donc pour que la Led s'allu
 ![image](https://github.com/user-attachments/assets/88d97b60-e692-49b1-9bbc-247d9402addb)
 
 ### Faire clignoter une LED
+
+<img width="499" height="488" alt="image" src="https://github.com/user-attachments/assets/f9500782-cc76-4261-a21a-eb3d43ffa6a9" />
+
