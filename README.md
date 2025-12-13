@@ -1,4 +1,3 @@
-<img width="529" height="249" alt="image" src="https://github.com/user-attachments/assets/b40608d3-a98a-4fbb-94e4-c06c2f73dac3" /># 2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR
 # Compte Rendu – TP1 FPGA 
 
 ## 1. Introduction
@@ -41,7 +40,7 @@ end architecture;
 
 2) Notre schéma :
 
-<img width="233" height="100" alt="image" src="https://github.com/user-attachments/assets/6346586b-656f-4260-912a-9ae1df243b96" />
+<img width="466" height="200" alt="image" src="https://github.com/user-attachments/assets/6346586b-656f-4260-912a-9ae1df243b96" />
 
 4) Schéma proposé par quartus:
 
