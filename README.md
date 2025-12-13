@@ -1,4 +1,4 @@
-# 2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR
+<img width="529" height="249" alt="image" src="https://github.com/user-attachments/assets/b40608d3-a98a-4fbb-94e4-c06c2f73dac3" /># 2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR
 # Compte Rendu – TP1 FPGA 
 
 ## 1. Introduction
@@ -39,13 +39,22 @@ end architecture;
 ### Faire clignoter une LED
 1) L'horloge nommée FPGA_CLK1_50 est connectée sur la broche V11.
 
-3) Schéma proposé par quartus:
+2) Notre schéma :
+
+<img width="233" height="100" alt="image" src="https://github.com/user-attachments/assets/6346586b-656f-4260-912a-9ae1df243b96" />
+
+4) Schéma proposé par quartus:
 
 <img width="499" height="488" alt="image" src="https://github.com/user-attachments/assets/f9500782-cc76-4261-a21a-eb3d43ffa6a9" />
 
 6) On fait clignoter la led :
 
 https://github.com/user-attachments/assets/0d36cc00-006d-4b81-8d19-2c59da1fe209
+
+7) Notre schéma :
+
+<img width="529" height="249" alt="image" src="https://github.com/user-attachments/assets/94570453-fdbc-443c-af33-27ba3aaa1aa7" />
+
 
 8) Schéma proposé par quartus :
 
