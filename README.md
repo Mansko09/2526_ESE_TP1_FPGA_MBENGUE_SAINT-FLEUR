@@ -69,6 +69,13 @@ https://github.com/user-attachments/assets/13af2a37-8c67-4c30-ba2a-02d5275525b1
 ## Petit projet : Ecran magique
 ### Gestion des encodeurs 
 2) D1 : première bascule D, D2: deuxieme bascule D
+
 D1.D reçoit A, D1.Q = l’état de A au cycle précédent
+
 D2.D reçoit aussi A, D2.Q = l’état de A au cycle courant
+
 Le composant logique à utiliser est un XOR qui prroduit une impulsion quand A change d’état
+
+4)
+
+<img width="700" height="541" alt="image" src="https://github.com/user-attachments/assets/32618eae-b96c-482d-9bc7-f5a9f87c801e" />
