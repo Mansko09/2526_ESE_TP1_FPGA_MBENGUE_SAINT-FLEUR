@@ -85,6 +85,7 @@ Test sur la carte :
 https://github.com/user-attachments/assets/46a03e3a-17aa-4312-88cc-c4e1e3271e07
 
 Contrôleur HDMI : 
+5) on utilise le format RGB 8:8:8, les bits de 23 à 16 correspondent au rouge, de 15 à 8 au vert et le reste (bleu) est mis à 0.
 
 <img width="638" height="551" alt="image" src="https://github.com/user-attachments/assets/cc3dd50e-0469-4563-ab63-ae356c00735a" />
 
