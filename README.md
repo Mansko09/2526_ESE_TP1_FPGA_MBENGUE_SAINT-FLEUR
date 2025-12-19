@@ -98,3 +98,18 @@ On a fait un carré de pixel blanc pour mieux le voir se déplacer :
 
 https://github.com/user-attachments/assets/f8702084-16fb-4aa1-889c-a3a4f12caf99
 
+
+### Mémorisation : 
+
+Une mémoire dual-port est une mémoire qui permet d’effectuer deux accès indépendants simultanés :
+
+Chaque port possède ses propres signaux d’adresse, de données et de contrôle.
+
+Port A peut lire ou écrire une cellule mémoire pendant qu’un autre accès se produit sur Port B.
+
+Cela permet par exemple :
+
+Port A : écriture des pixels venant des encodeurs (dessin)
+
+Port B : lecture des pixels par le contrôleur HDMI (affichage)
+
