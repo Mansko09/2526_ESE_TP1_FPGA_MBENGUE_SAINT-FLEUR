@@ -1,0 +1,95 @@
+|Led_encodeur
+i_clk => rising_edge_detect:red_A.i_clk
+i_clk => led_vector[0].CLK
+i_clk => led_vector[1].CLK
+i_clk => led_vector[2].CLK
+i_clk => led_vector[3].CLK
+i_clk => led_vector[4].CLK
+i_clk => led_vector[5].CLK
+i_clk => led_vector[6].CLK
+i_clk => led_vector[7].CLK
+i_clk => led_vector[8].CLK
+i_clk => led_vector[9].CLK
+i_clk => pos[0].CLK
+i_clk => pos[1].CLK
+i_clk => pos[2].CLK
+i_clk => pos[3].CLK
+i_clk => pos[4].CLK
+i_clk => pos[5].CLK
+i_clk => pos[6].CLK
+i_clk => pos[7].CLK
+i_clk => pos[8].CLK
+i_clk => falling_edge_detect:fed_A.i_clk
+i_clk => rising_edge_detect:red_B.i_clk
+i_clk => falling_edge_detect:fed_B.i_clk
+i_rst_n => led_vector[0].ACLR
+i_rst_n => led_vector[1].ACLR
+i_rst_n => led_vector[2].ACLR
+i_rst_n => led_vector[3].ACLR
+i_rst_n => led_vector[4].ACLR
+i_rst_n => led_vector[5].ACLR
+i_rst_n => led_vector[6].ACLR
+i_rst_n => led_vector[7].ACLR
+i_rst_n => led_vector[8].ACLR
+i_rst_n => led_vector[9].ACLR
+i_rst_n => pos[0].ACLR
+i_rst_n => pos[1].ACLR
+i_rst_n => pos[2].ACLR
+i_rst_n => pos[3].ACLR
+i_rst_n => pos[4].ACLR
+i_rst_n => pos[5].ACLR
+i_rst_n => pos[6].ACLR
+i_rst_n => pos[7].ACLR
+i_rst_n => pos[8].ACLR
+enc_A => encoder_proc.IN1
+enc_A => rising_edge_detect:red_A.A
+enc_A => falling_edge_detect:fed_A.A
+enc_A => encoder_proc.IN1
+enc_B => encoder_proc.IN1
+enc_B => rising_edge_detect:red_B.A
+enc_B => falling_edge_detect:fed_B.A
+enc_B => encoder_proc.IN1
+led0 << led_vector[0].DB_MAX_OUTPUT_PORT_TYPE
+led1 << led_vector[1].DB_MAX_OUTPUT_PORT_TYPE
+led2 << led_vector[2].DB_MAX_OUTPUT_PORT_TYPE
+led3 << led_vector[3].DB_MAX_OUTPUT_PORT_TYPE
+led4 << led_vector[4].DB_MAX_OUTPUT_PORT_TYPE
+led5 << led_vector[5].DB_MAX_OUTPUT_PORT_TYPE
+led6 << led_vector[6].DB_MAX_OUTPUT_PORT_TYPE
+led7 << led_vector[7].DB_MAX_OUTPUT_PORT_TYPE
+led8 << led_vector[8].DB_MAX_OUTPUT_PORT_TYPE
+led9 << led_vector[9].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Led_encodeur|rising_edge_detect:red_A
+i_clk => a_prev.CLK
+i_clk => a_curr.CLK
+i_clk => e_sig.CLK
+A => a_curr.DATAIN
+E <= e_sig.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Led_encodeur|falling_edge_detect:fed_A
+i_clk => a_prev.CLK
+i_clk => a_curr.CLK
+i_clk => e_sig.CLK
+A => a_curr.DATAIN
+E <= e_sig.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Led_encodeur|rising_edge_detect:red_B
+i_clk => a_prev.CLK
+i_clk => a_curr.CLK
+i_clk => e_sig.CLK
+A => a_curr.DATAIN
+E <= e_sig.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Led_encodeur|falling_edge_detect:fed_B
+i_clk => a_prev.CLK
+i_clk => a_curr.CLK
+i_clk => e_sig.CLK
+A => a_curr.DATAIN
+E <= e_sig.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,179 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder
+Eencoder
+Z1 w1765964703
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8encoder.vhd
+Z6 Fencoder.vhd
+l0
+L5 1
+VTHU:W;?[hQeG[Q6@e6?@z2
+!s100 ZnC<^j0`ZdJ^l[B:z?g6c0
+Z7 OV;C;2020.1;71
+33
+Z8 !s110 1765964726
+!i10b 1
+Z9 !s108 1765964726.000000
+Z10 !s90 -reportprogress|300|-2008|encoder.vhd|
+Z11 !s107 encoder.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 7 encoder 0 22 THU:W;?[hQeG[Q6@e6?@z2
+!i122 2
+l40
+L18 75
+Vd;<C`>@dnZfdTh;kUCMFC1
+!s100 GcW20No=@_S1V^co9C=?n2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eencoder_tb
+Z14 w1765960975
+R2
+R3
+R4
+!i122 3
+R0
+Z15 8encoder_tb.vhd
+Z16 Fencoder_tb.vhd
+l0
+L5 1
+VVIKO;2_I=Yh?[i>TCjm7>1
+!s100 8dJJ[Vb3lObjWUT3RZmEO3
+R7
+33
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-2008|encoder_tb.vhd|
+!s107 encoder_tb.vhd|
+!i113 1
+R12
+R13
+Asim
+R2
+R3
+R4
+DEx4 work 10 encoder_tb 0 22 VIKO;2_I=Yh?[i>TCjm7>1
+!i122 3
+l48
+L8 115
+ViGi2mPT4:Fm[TUOcENg]K2
+!s100 cCWVBjaXh?f;HMiW:ISoS0
+R7
+33
+R8
+!i10b 1
+R9
+R17
+Z18 !s107 encoder_tb.vhd|
+!i113 1
+R12
+R13
+Efalling_edge_detect
+Z19 w1765958102
+R3
+R4
+!i122 1
+R0
+Z20 8falling_edge_detect.vhd
+Z21 Ffalling_edge_detect.vhd
+l0
+L4 1
+V5G8WYgVzB9;8BT:gWf^V00
+!s100 `VeQk6Ji2kCP^de2AElgR0
+R7
+33
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-2008|falling_edge_detect.vhd|
+Z23 !s107 falling_edge_detect.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 19 falling_edge_detect 0 22 5G8WYgVzB9;8BT:gWf^V00
+!i122 1
+l14
+Z24 L12 19
+ViA_oYFzm2G8o5o_4_knHn0
+!s100 G`A=X1]J8^hgZ_D]BcSPU1
+R7
+33
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Erising_edge_detect
+Z25 w1765957925
+R3
+R4
+!i122 0
+R0
+Z26 8rising_edge_detect.vhd
+Z27 Frising_edge_detect.vhd
+l0
+L4 1
+V^PmYFFjSeUkj=`3bZ7=o`1
+!s100 4X@7BPna<DB<[NzAo?B072
+R7
+33
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-2008|rising_edge_detect.vhd|
+Z29 !s107 rising_edge_detect.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 18 rising_edge_detect 0 22 ^PmYFFjSeUkj=`3bZ7=o`1
+!i122 0
+l14
+R24
+V;E=G0`?Lkm4jan06E9mjY1
+!s100 O56:<mRimKPaca;9[HQSQ2
+R7
+33
+R8
+!i10b 1
+R9
+R28
+R29
+!i113 1
+R12
+R13

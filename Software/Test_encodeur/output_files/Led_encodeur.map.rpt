@@ -1,0 +1,383 @@
+Analysis & Synthesis report for Led_encodeur
+Fri Dec 19 08:39:25 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Dec 19 08:39:25 2025           ;
+; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                   ; Led_encodeur                                    ;
+; Top-level Entity Name           ; Led_encodeur                                    ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 27                                              ;
+; Total pins                      ; 14                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEBA6U23I7       ;                    ;
+; Top-level entity name                                                           ; Led_encodeur       ; Led_encodeur       ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                  ;
++-------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path    ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                           ; Library ;
++-------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../telecran/rising_edge_detect.vhd  ; yes             ; User VHDL File               ; C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/rising_edge_detect.vhd          ;         ;
+; ../telecran/falling_edge_detect.vhd ; yes             ; User VHDL File               ; C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/falling_edge_detect.vhd         ;         ;
+; Led_encodeur.vhd                    ; yes             ; User VHDL File               ; C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd           ;         ;
+; lpm_divide.tdf                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                                               ;         ;
+; abs_divider.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/abs_divider.inc                                                              ;         ;
+; sign_div_unsign.inc                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                                          ;         ;
+; aglobal241.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                                               ;         ;
+; db/lpm_divide_8am.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/db/lpm_divide_8am.tdf      ;         ;
+; db/sign_div_unsign_ekh.tdf          ; yes             ; Auto-Generated Megafunction  ; C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/db/sign_div_unsign_ekh.tdf ;         ;
+; db/alt_u_div_2te.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/db/alt_u_div_2te.tdf       ;         ;
++-------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                             ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                     ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 44                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Combinational ALUT usage for logic          ; 85                                                                                                                        ;
+;     -- 7 input functions                    ; 0                                                                                                                         ;
+;     -- 6 input functions                    ; 1                                                                                                                         ;
+;     -- 5 input functions                    ; 7                                                                                                                         ;
+;     -- 4 input functions                    ; 19                                                                                                                        ;
+;     -- <=3 input functions                  ; 58                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Dedicated logic registers                   ; 27                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; I/O pins                                    ; 14                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Total DSP Blocks                            ; 0                                                                                                                         ;
+;                                             ;                                                                                                                           ;
+; Maximum fan-out node                        ; lpm_divide:Div0|lpm_divide_8am:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider|add_sub_5_result_int[6]~1 ;
+; Maximum fan-out                             ; 27                                                                                                                        ;
+; Total fan-out                               ; 382                                                                                                                       ;
+; Average fan-out                             ; 2.73                                                                                                                      ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                  ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                           ; Entity Name         ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |Led_encodeur                          ; 85 (27)             ; 27 (19)                   ; 0                 ; 0          ; 14   ; 0            ; |Led_encodeur                                                                                                 ; Led_encodeur        ; work         ;
+;    |falling_edge_detect:fed_A|         ; 1 (1)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|falling_edge_detect:fed_A                                                                       ; falling_edge_detect ; work         ;
+;    |falling_edge_detect:fed_B|         ; 1 (1)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|falling_edge_detect:fed_B                                                                       ; falling_edge_detect ; work         ;
+;    |lpm_divide:Div0|                   ; 54 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_8am:auto_generated|  ; 54 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|lpm_divide:Div0|lpm_divide_8am:auto_generated                                                   ; lpm_divide_8am      ; work         ;
+;          |sign_div_unsign_ekh:divider| ; 54 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|lpm_divide:Div0|lpm_divide_8am:auto_generated|sign_div_unsign_ekh:divider                       ; sign_div_unsign_ekh ; work         ;
+;             |alt_u_div_2te:divider|    ; 54 (54)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|lpm_divide:Div0|lpm_divide_8am:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_2te:divider ; alt_u_div_2te       ; work         ;
+;    |rising_edge_detect:red_A|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|rising_edge_detect:red_A                                                                        ; rising_edge_detect  ; work         ;
+;    |rising_edge_detect:red_B|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Led_encodeur|rising_edge_detect:red_B                                                                        ; rising_edge_detect  ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++---------------------------------------+----------------------------------------------+
+; Register name                         ; Reason for Removal                           ;
++---------------------------------------+----------------------------------------------+
+; rising_edge_detect:red_B|a_prev       ; Merged with falling_edge_detect:fed_B|a_prev ;
+; rising_edge_detect:red_B|a_curr       ; Merged with falling_edge_detect:fed_B|a_curr ;
+; rising_edge_detect:red_A|a_prev       ; Merged with falling_edge_detect:fed_A|a_prev ;
+; rising_edge_detect:red_A|a_curr       ; Merged with falling_edge_detect:fed_A|a_curr ;
+; Total Number of Removed Registers = 4 ;                                              ;
++---------------------------------------+----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 27    ;
+; Number of registers using Synchronous Clear  ; 10    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 9     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 9              ; Untyped                ;
+; LPM_WIDTHD             ; 6              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_8am ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 27                          ;
+;     CLR SCLR          ; 10                          ;
+;     ENA CLR           ; 9                           ;
+;     plain             ; 8                           ;
+; arriav_lcell_comb     ; 85                          ;
+;     arith             ; 36                          ;
+;         0 data inputs ; 6                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 6                           ;
+;     normal            ; 42                          ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 13                          ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 1                           ;
+;     shared            ; 7                           ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 6                           ;
+; boundary_port         ; 14                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.30                        ;
+; Average LUT depth     ; 5.45                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Fri Dec 19 08:39:16 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Led_encodeur -c Led_encodeur
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mbeng/documents/ensea_3e_ese/tp1_fpga/2526_ese_tp1_fpga_mbengue_saint-fleur/software/telecran/rising_edge_detect.vhd
+    Info (12022): Found design unit 1: rising_edge_detect-rtl File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/rising_edge_detect.vhd Line: 12
+    Info (12023): Found entity 1: rising_edge_detect File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/rising_edge_detect.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mbeng/documents/ensea_3e_ese/tp1_fpga/2526_ese_tp1_fpga_mbengue_saint-fleur/software/telecran/encoder.vhd
+    Info (12022): Found design unit 1: encoder-rtl File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder.vhd Line: 19
+    Info (12023): Found entity 1: encoder File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mbeng/documents/ensea_3e_ese/tp1_fpga/2526_ese_tp1_fpga_mbengue_saint-fleur/software/telecran/falling_edge_detect.vhd
+    Info (12022): Found design unit 1: falling_edge_detect-rtl File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/falling_edge_detect.vhd Line: 12
+    Info (12023): Found entity 1: falling_edge_detect File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/falling_edge_detect.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file led_encodeur.vhd
+    Info (12022): Found design unit 1: Led_encodeur-rtl File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd Line: 31
+    Info (12023): Found entity 1: Led_encodeur File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file debounce.vhd
+    Info (12022): Found design unit 1: debounce-rtl File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/debounce.vhd Line: 17
+    Info (12023): Found entity 1: debounce File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/debounce.vhd Line: 5
+Info (12127): Elaborating entity "Led_encodeur" for the top level hierarchy
+Info (12128): Elaborating entity "rising_edge_detect" for hierarchy "rising_edge_detect:red_A" File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd Line: 74
+Info (12128): Elaborating entity "falling_edge_detect" for hierarchy "falling_edge_detect:fed_A" File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd Line: 77
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd Line: 128
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd Line: 128
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/Led_encodeur.vhd Line: 128
+    Info (12134): Parameter "LPM_WIDTHN" = "9"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_8am.tdf
+    Info (12023): Found entity 1: lpm_divide_8am File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/db/lpm_divide_8am.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ekh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_ekh File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/db/sign_div_unsign_ekh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_2te.tdf
+    Info (12023): Found entity 1: alt_u_div_2te File: C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/Test_encodeur/db/alt_u_div_2te.tdf Line: 23
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 89 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4933 megabytes
+    Info: Processing ended: Fri Dec 19 08:39:25 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
+
+

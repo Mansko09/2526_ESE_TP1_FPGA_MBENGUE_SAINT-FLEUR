@@ -1,0 +1,727 @@
+cd ..
+do ../sim_encoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:16:49 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "encoder.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 09:16:50 on Dec 17,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../sim_encoder.do line 3
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 encoder.vhd"
+do sim_encoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:19:10 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "encoder.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 09:19:11 on Dec 17,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./sim_encoder.do line 3
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 encoder.vhd"
+do sim_encoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:19:52 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "encoder.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 09:19:52 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./sim_encoder.do line 3
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 encoder.vhd"
+sudo do sim_encoder.do
+# Sudo est désactivé sur cet ordinateur. Pour l’activer, accédez à ]8;;ms-settings:developers\Developer Settings page]8;;\ dans l’application Paramètres
+do sim_encoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:23:58 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 09:23:58 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:23:58 on Dec 17,2025
+# vcom -reportprogress 300 -2008 tb_encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_encoder
+# -- Compiling architecture sim of tb_encoder
+# End time: 09:23:58 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_encoder 
+# Start time: 09:23:58 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_encoder(sim)
+# Loading work.encoder(rtl)
+# ** Warning: (vsim-3473) Component instance "red_A : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_A : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "red_B : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_B : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# Unknown option: all#
+# ** UI-Msg: (vsim-4005) Invalid argument '-all#'.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:24:05 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 09:24:05 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:24:05 on Dec 17,2025
+# vcom -reportprogress 300 -2008 tb_encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_encoder
+# -- Compiling architecture sim of tb_encoder
+# End time: 09:24:05 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:24:07 on Dec 17,2025, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 13
+# vsim -voptargs="+acc" work.tb_encoder 
+# Start time: 09:24:07 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_encoder(sim)
+# Loading work.encoder(rtl)
+# ** Warning: (vsim-3473) Component instance "red_A : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_A : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "red_B : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_B : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Note: Début simulation : position initiale = 0
+#    Time: 200 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après 10 pas CW : S = 0
+#    Time: 3400 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après 5 pas CCW : S = 0
+#    Time: 5 us  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après tentative de dépassement max : S = 0
+#    Time: 158600 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après descente vers 0 : S = 0
+#    Time: 318600 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Fin de la simulation
+#    Time: 320600 ns  Iteration: 0  Instance: /tb_encoder
+do sim_encoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:32:03 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 09:32:03 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:32:03 on Dec 17,2025
+# vcom -reportprogress 300 -2008 tb_encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_encoder
+# -- Compiling architecture sim of tb_encoder
+# End time: 09:32:03 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:32:04 on Dec 17,2025, Elapsed time: 0:07:57
+# Errors: 0, Warnings: 6
+# vsim -voptargs="+acc" work.tb_encoder 
+# Start time: 09:32:04 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_encoder(sim)
+# Loading work.encoder(rtl)
+# ** Warning: (vsim-3473) Component instance "red_A : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_A : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "red_B : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_B : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# Unknown option: all#
+# ** UI-Msg: (vsim-4005) Invalid argument '-all#'.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:32:07 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 09:32:07 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:32:07 on Dec 17,2025
+# vcom -reportprogress 300 -2008 tb_encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_encoder
+# -- Compiling architecture sim of tb_encoder
+# End time: 09:32:07 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:32:08 on Dec 17,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.tb_encoder 
+# Start time: 09:32:08 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_encoder(sim)
+# Loading work.encoder(rtl)
+# ** Warning: (vsim-3473) Component instance "red_A : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_A : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "red_B : rising_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Warning: (vsim-3473) Component instance "fed_B : falling_edge_detect" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_encoder/dut File: encoder.vhd
+# ** Note: Début simulation : position initiale = 0
+#    Time: 200 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après 10 pas CW : S = 0
+#    Time: 3400 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après 5 pas CCW : S = 0
+#    Time: 5 us  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après tentative de dépassement max : S = 0
+#    Time: 158600 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Après descente vers 0 : S = 0
+#    Time: 318600 ns  Iteration: 0  Instance: /tb_encoder
+# ** Note: Fin de la simulation
+#    Time: 320600 ns  Iteration: 0  Instance: /tb_encoder
+# ** Error: invalid command name "abel"
+# Error in macro ./sim_encoder.do line 34
+# invalid command name "abel"
+#     while executing
+# "abel "A falling" /DUT/a_falling"
+do sim_encoder.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:44:19 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 09:44:19 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:44:19 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 09:44:19 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:44:19 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 09:44:19 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:44:19 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "encoder_tb.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 09:44:19 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./sim_encoder.do line 15
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 encoder_tb.vhd"
+do sim_encoder.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:46:02 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 09:46:02 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:46:02 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 09:46:02 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:46:02 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 09:46:02 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:46:02 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder_tb
+# -- Compiling architecture sim of encoder_tb
+# End time: 09:46:02 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:46:04 on Dec 17,2025, Elapsed time: 0:13:56
+# Errors: 2, Warnings: 7
+# vsim -voptargs=""+acc"" work.encoder_tb 
+# Start time: 09:46:04 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.encoder_tb(sim)
+# Loading work.encoder(rtl)
+# Loading work.rising_edge_detect(rtl)
+# Loading work.falling_edge_detect(rtl)
+# ** Note: Fin de la simulation
+#    Time: 1290 ns  Iteration: 0  Instance: /encoder_tb
+# 0 ps
+# 7288395292500 ps
+do sim_encoder.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:38:53 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 10:38:53 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:38:53 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 10:38:53 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:38:53 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 10:38:53 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:38:53 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder_tb
+# -- Compiling architecture sim of encoder_tb
+# End time: 10:38:53 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:38:55 on Dec 17,2025, Elapsed time: 0:52:51
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.encoder_tb 
+# Start time: 10:38:55 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.encoder_tb(sim)
+# Loading work.encoder(rtl)
+# Loading work.rising_edge_detect(rtl)
+# Loading work.falling_edge_detect(rtl)
+# ** Note: Fin de la simulation
+#    Time: 1290 ns  Iteration: 0  Instance: /encoder_tb
+# 0 ps
+# 5250 ns
+do sim_encoder.do
+# Error 31: Unable to unlink file "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work/_lib.qdb".
+# Error 133: Unable to remove directory "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:39:34 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 10:39:34 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:39:34 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 10:39:34 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:39:34 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 10:39:34 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:39:34 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder_tb
+# -- Compiling architecture sim of encoder_tb
+# End time: 10:39:34 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:39:36 on Dec 17,2025, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.encoder_tb 
+# Start time: 10:39:36 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.encoder_tb(sim)
+# Loading work.encoder(rtl)
+# Loading work.rising_edge_detect(rtl)
+# Loading work.falling_edge_detect(rtl)
+# ** Note: Fin de la simulation
+#    Time: 1290 ns  Iteration: 0  Instance: /encoder_tb
+# 0 ps
+# 5250 ns
+do sim_encoder.do
+# Error 31: Unable to unlink file "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:40:11 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 10:40:11 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:40:11 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 10:40:11 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:40:11 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 10:40:11 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:40:11 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder_tb
+# -- Compiling architecture sim of encoder_tb
+# End time: 10:40:11 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:40:13 on Dec 17,2025, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.encoder_tb 
+# Start time: 10:40:13 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.encoder_tb(sim)
+# Loading work.encoder(rtl)
+# Loading work.rising_edge_detect(rtl)
+# Loading work.falling_edge_detect(rtl)
+# 0 ps
+# 1050 ns
+do sim_encoder.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:23 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 10:41:23 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:23 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 10:41:23 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:23 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 10:41:23 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:23 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder_tb
+# -- Compiling architecture sim of encoder_tb
+# End time: 10:41:23 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:41:35 on Dec 17,2025, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.encoder_tb 
+# Start time: 10:41:35 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.encoder_tb(sim)
+# Loading work.encoder(rtl)
+# Loading work.rising_edge_detect(rtl)
+# Loading work.falling_edge_detect(rtl)
+# 0 ps
+# 1050 ns
+do sim_encoder.do
+# Error 31: Unable to unlink file "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:46 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 10:41:46 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:46 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 10:41:46 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:46 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 10:41:47 on Dec 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:41:47 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder_tb
+# -- Compiling architecture sim of encoder_tb
+# End time: 10:41:47 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:41:48 on Dec 17,2025, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.encoder_tb 
+# Start time: 10:41:48 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.encoder_tb(sim)
+# Loading work.encoder(rtl)
+# Loading work.rising_edge_detect(rtl)
+# Loading work.falling_edge_detect(rtl)
+# 0 ps
+# 1050 ns
+do sim_encoder.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/mbeng/Documents/ENSEA_3e_ESE/TP1_FPGA/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/telecran/encoder/encoder.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:45:26 on Dec 17,2025
+# vcom -reportprogress 300 -2008 rising_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_detect
+# -- Compiling architecture rtl of rising_edge_detect
+# End time: 10:45:26 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:45:26 on Dec 17,2025
+# vcom -reportprogress 300 -2008 falling_edge_detect.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity falling_edge_detect
+# -- Compiling architecture rtl of falling_edge_detect
+# End time: 10:45:26 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:45:26 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder
+# -- Compiling architecture rtl of encoder
+# End time: 10:45:26 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:45:26 on Dec 17,2025
+# vcom -reportprogress 300 -2008 encoder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity encoder_tb
+# -- Compiling architecture sim of encoder_tb
+# End time: 10:45:26 on Dec 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:45:29 on Dec 17,2025, Elapsed time: 0:03:41
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.encoder_tb 
+# Start time: 10:45:29 on Dec 17,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.encoder_tb(sim)
+# Loading work.encoder(rtl)
+# Loading work.rising_edge_detect(rtl)
+# Loading work.falling_edge_detect(rtl)
+# 0 ps
+# 1050 ns
+# End time: 11:59:04 on Dec 17,2025, Elapsed time: 1:13:35
+# Errors: 0, Warnings: 2
