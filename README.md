@@ -90,3 +90,11 @@ https://github.com/user-attachments/assets/46a03e3a-17aa-4312-88cc-c4e1e3271e07
 
 <img width="638" height="551" alt="image" src="https://github.com/user-attachments/assets/cc3dd50e-0469-4563-ab63-ae356c00735a" />
 
+### Déplacement d'un pixel : 
+
+On a fait un carré de pixel blanc pour mieux le voir se déplacer : 
+
+
+
+https://github.com/user-attachments/assets/f8702084-16fb-4aa1-889c-a3a4f12caf99
+
