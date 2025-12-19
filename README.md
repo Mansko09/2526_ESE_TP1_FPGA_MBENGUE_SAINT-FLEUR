@@ -84,4 +84,7 @@ Test sur la carte :
 
 https://github.com/user-attachments/assets/46a03e3a-17aa-4312-88cc-c4e1e3271e07
 
+Contrôleur HDMI : 
+
+<img width="638" height="551" alt="image" src="https://github.com/user-attachments/assets/cc3dd50e-0469-4563-ab63-ae356c00735a" />
 
