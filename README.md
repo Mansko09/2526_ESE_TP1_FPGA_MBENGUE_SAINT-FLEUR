@@ -79,3 +79,9 @@ Le composant logique à utiliser est un XOR qui prroduit une impulsion quand A c
 4)
 
 <img width="700" height="541" alt="image" src="https://github.com/user-attachments/assets/32618eae-b96c-482d-9bc7-f5a9f87c801e" />
+
+Test sur la carte : 
+
+https://github.com/user-attachments/assets/46a03e3a-17aa-4312-88cc-c4e1e3271e07
+
+
