@@ -117,4 +117,7 @@ Port B : lecture des pixels par le contrôleur HDMI (affichage)
 
 <img width="401" height="458" alt="image" src="https://github.com/user-attachments/assets/f442a4df-3704-4183-9d9d-5e3232400e02" />
 
+3) On réussit à faire un dessin :
+
+<img width="217" height="111" alt="image" src="https://github.com/user-attachments/assets/116828c8-6aaa-4e4e-afd8-3a57f49ea703" />
 
