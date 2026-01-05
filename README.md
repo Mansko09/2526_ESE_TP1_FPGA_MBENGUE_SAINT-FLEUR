@@ -123,3 +123,10 @@ Port B : lecture des pixels par le contrôleur HDMI (affichage)
 
 ### Effacement : 
 1) On souhaiterait faire un effacement progressif : on doit donc balayer toutes les adresses tout en bloquant temporairement les écritures normales. On doit donc introduire une notion d'état, un compteur, une priorité sur l'écriture.
+On a donc ajouté pour l'appui sur le bouton de l'encodeur gauche une machine d'état simple. Lorsqu'on appuie, un signal est généré et déclenche la machine d'état qui passe de l'état IDLE à l'état CLEARING. Dans l'état CLEARING, un compteur parcourt toutes les adresses de la RAM. A chaque cycle d'horloge, la donnée écrite est mise à zéro, ce qui efface progressivement le framebuffer. Une fois cela terminé, la machine revient à l'état IDLE et l'écriture normale peut reprendre.
+
+3) 
+
+https://github.com/user-attachments/assets/40daa5cf-f84e-4f94-ac62-affe3b69ba44
+
+
