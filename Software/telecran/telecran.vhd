@@ -40,6 +40,13 @@ end entity telecran;
 architecture rtl of telecran is
 
     ------------------------------------------------------------------
+    -- Constants
+    ------------------------------------------------------------------
+    constant h_res : natural := 720;
+    constant v_res : natural := 480;
+    constant fb_size : natural := h_res * v_res;
+	 
+    ------------------------------------------------------------------
     -- Components
     ------------------------------------------------------------------
     component I2C_HDMI_Config 
@@ -106,12 +113,25 @@ architecture rtl of telecran is
             o_pixel_data : out std_logic_vector(23 downto 0)
         );
     end component;
-
-    ------------------------------------------------------------------
-    -- Constants
-    ------------------------------------------------------------------
-    constant h_res : natural := 720;
-    constant v_res : natural := 480;
+	 
+	component dpram
+		 generic (
+			  mem_size   : natural := fb_size;
+			  data_width : natural := 8
+		 );
+		 port (
+			  i_clk_a  : in std_logic;
+			  i_clk_b  : in std_logic;
+			  i_data_a : in std_logic_vector(data_width-1 downto 0);
+			  i_data_b : in std_logic_vector(data_width-1 downto 0);
+			  i_addr_a : in natural range 0 to mem_size-1;
+			  i_addr_b : in natural range 0 to mem_size-1;
+			  i_we_a   : in std_logic;
+			  i_we_b   : in std_logic;
+			  o_q_a    : out std_logic_vector(data_width-1 downto 0);
+			  o_q_b    : out std_logic_vector(data_width-1 downto 0)
+		 );
+	end component;
 
     ------------------------------------------------------------------
     -- Signals
@@ -119,19 +139,35 @@ architecture rtl of telecran is
     signal s_clk_27 : std_logic;
     signal s_rst_n  : std_logic;
 
-    -- HDMI internal signals
     signal s_hdmi_hs : std_logic;
     signal s_hdmi_vs : std_logic;
     signal s_hdmi_de : std_logic;
     signal s_x       : natural;
     signal s_y       : natural;
 
-    -- Encodeur positions
-    signal h_val     : natural range 0 to h_res := 0; -- encodeur horizontal
-    signal v_val     : natural range 0 to v_res := 0; -- encodeur vertical
+    signal h_val     : natural range 0 to h_res := 0;
+    signal v_val     : natural range 0 to v_res := 0;
 
-    -- Gestion encodeurs pixel
+    signal s_cursor_pixel : std_logic_vector(23 downto 0);
     signal s_pixel_data : std_logic_vector(23 downto 0);
+	 
+    signal fb_addr_a, fb_addr_b : natural range 0 to fb_size-1;
+    signal fb_we_a : std_logic;
+    signal fb_q_b  : std_logic_vector(7 downto 0);
+	 signal fb_data_a : std_logic_vector(7 downto 0);
+
+
+    ------------------------------------------------------------------
+    -- EFFACEMENT
+    ------------------------------------------------------------------
+    type clear_state_t is (IDLE, CLEARING);
+    signal clear_state : clear_state_t := IDLE;
+
+    signal clear_addr : natural range 0 to fb_size-1 := 0;
+
+    signal pb_sync, pb_prev : std_logic;
+    signal clear_request   : std_logic;
+	 
 
 begin
 
@@ -142,7 +178,7 @@ begin
     o_de10_leds <= (others => '0');
 
     ------------------------------------------------------------------
-    -- PLL : 50 MHz -> 27 MHz
+    -- PLL
     ------------------------------------------------------------------
     pll0 : pll
         port map (
@@ -153,7 +189,7 @@ begin
         );
 
     ------------------------------------------------------------------
-    -- ADV7513 configuration (I2C)
+    -- HDMI I2C
     ------------------------------------------------------------------
     I2C_HDMI_Config0 : I2C_HDMI_Config
         port map (
@@ -190,6 +226,12 @@ begin
             o_y_counter     => s_y
         );
 
+    o_hdmi_tx_clk <= s_clk_27;
+    o_hdmi_tx_hs  <= s_hdmi_hs;
+    o_hdmi_tx_vs  <= s_hdmi_vs;
+    o_hdmi_tx_de  <= s_hdmi_de;
+    o_hdmi_tx_d   <= s_pixel_data;
+
     ------------------------------------------------------------------
     -- Encodeurs
     ------------------------------------------------------------------
@@ -212,7 +254,7 @@ begin
         );
 
     ------------------------------------------------------------------
-    -- Pixel unique selon encodeurs
+    -- Cursor overlay 
     ------------------------------------------------------------------
     gest_enc0 : gestion_encodeurs
         port map(
@@ -220,16 +262,97 @@ begin
             i_y_counter => s_y,
             i_x_enc     => h_val,
             i_y_enc     => v_val,
-            o_pixel_data => s_pixel_data
+            o_pixel_data => s_cursor_pixel
         );
 
     ------------------------------------------------------------------
-    -- HDMI physical outputs
+    -- Détection appui bouton 
     ------------------------------------------------------------------
-    o_hdmi_tx_clk <= s_clk_27;
-    o_hdmi_tx_hs  <= s_hdmi_hs;
-    o_hdmi_tx_vs  <= s_hdmi_vs;
-    o_hdmi_tx_de  <= s_hdmi_de;
-    o_hdmi_tx_d   <= s_pixel_data;
+    process(i_clk_50)
+    begin
+        if rising_edge(i_clk_50) then
+            pb_sync <= i_left_pb;
+            pb_prev <= pb_sync;
+        end if;
+    end process;
+
+    clear_request <= '1' when (pb_prev = '1' and pb_sync = '0') else '0';
+
+    ------------------------------------------------------------------
+    -- Machine d'état effacement 
+    ------------------------------------------------------------------
+    process(i_clk_50)
+    begin
+        if rising_edge(i_clk_50) then
+            if i_rst_n = '0' then
+                clear_state <= IDLE;
+                clear_addr  <= 0;
+            else
+                case clear_state is
+                    when IDLE =>
+                        if clear_request = '1' then
+                            clear_state <= CLEARING;
+                            clear_addr  <= 0;
+                        end if;
+
+                    when CLEARING =>
+                        if clear_addr = fb_size-1 then
+                            clear_state <= IDLE;
+                        else
+                            clear_addr <= clear_addr + 1;
+                        end if;
+                end case;
+            end if;
+        end if;
+    end process;
+
+    ------------------------------------------------------------------
+    -- Framebuffer addressing 
+    ------------------------------------------------------------------
+    fb_addr_a <= clear_addr when clear_state = CLEARING
+                 else v_val * h_res + h_val;
+
+    fb_addr_b <= s_y * h_res + s_x;
+
+    fb_we_a <= '1' when clear_state = CLEARING else
+               '1' when (s_x = h_val and s_y = v_val and s_hdmi_de = '1')
+               else '0';
+
+    ------------------------------------------------------------------
+    -- Framebuffer RAM 
+    ------------------------------------------------------------------
+	 fb_data_a <= (others => '0') when clear_state = CLEARING else x"FF";
+
+    ram0 : dpram
+        port map (
+            i_clk_a  => i_clk_50,
+            i_clk_b  => s_clk_27,
+            i_data_a => fb_data_a,
+            i_data_b => (others => '0'),
+            i_addr_a => fb_addr_a,
+            i_addr_b => fb_addr_b,
+            i_we_a   => fb_we_a,
+            i_we_b   => '0',
+            o_q_a    => open,
+            o_q_b    => fb_q_b
+        );
+
+    ------------------------------------------------------------------
+    -- Display logic
+    ------------------------------------------------------------------
+    process(s_clk_27)
+    begin
+        if rising_edge(s_clk_27) then
+            if s_hdmi_de = '1' then
+                if fb_q_b /= x"00" then
+                    s_pixel_data <= x"FFFFFF";
+                else
+                    s_pixel_data <= x"000000";
+                end if;
+            else
+                s_pixel_data <= (others => '0');
+            end if;
+        end if;
+    end process;
 
 end architecture rtl;
