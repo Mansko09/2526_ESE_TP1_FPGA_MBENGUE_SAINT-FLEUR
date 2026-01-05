@@ -121,3 +121,5 @@ Port B : lecture des pixels par le contrôleur HDMI (affichage)
 
 <img width="217" height="111" alt="image" src="https://github.com/user-attachments/assets/116828c8-6aaa-4e4e-afd8-3a57f49ea703" />
 
+### Effacement : 
+1) On souhaiterait faire un effacement progressif : on doit donc balayer toutes les adresses tout en bloquant temporairement les écritures normales. On doit donc introduire une notion d'état, un compteur, une priorité sur l'écriture.
