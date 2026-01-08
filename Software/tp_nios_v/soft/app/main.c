@@ -1,0 +1,11 @@
+#include <unistd.h> // for usleep
+
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+int main (void)
+{
+	printf("Hello, world!\n");
+
+	return 0;
+}

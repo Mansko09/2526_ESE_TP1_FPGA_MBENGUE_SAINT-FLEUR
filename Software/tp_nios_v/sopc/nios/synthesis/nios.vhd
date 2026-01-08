@@ -349,6 +349,13 @@ architecture rtl of nios is
 	signal mm_interconnect_0_pio_0_s1_address                              : std_logic_vector(1 downto 0);  -- mm_interconnect_0:pio_0_s1_address -> pio_0:address
 	signal mm_interconnect_0_pio_0_s1_write                                : std_logic;                     -- mm_interconnect_0:pio_0_s1_write -> mm_interconnect_0_pio_0_s1_write:in
 	signal mm_interconnect_0_pio_0_s1_writedata                            : std_logic_vector(31 downto 0); -- mm_interconnect_0:pio_0_s1_writedata -> pio_0:writedata
+	signal mm_interconnect_0_onchip_memory2_0_s1_chipselect                : std_logic;                     -- mm_interconnect_0:onchip_memory2_0_s1_chipselect -> onchip_memory2_0:chipselect
+	signal mm_interconnect_0_onchip_memory2_0_s1_readdata                  : std_logic_vector(31 downto 0); -- onchip_memory2_0:readdata -> mm_interconnect_0:onchip_memory2_0_s1_readdata
+	signal mm_interconnect_0_onchip_memory2_0_s1_address                   : std_logic_vector(14 downto 0); -- mm_interconnect_0:onchip_memory2_0_s1_address -> onchip_memory2_0:address
+	signal mm_interconnect_0_onchip_memory2_0_s1_byteenable                : std_logic_vector(3 downto 0);  -- mm_interconnect_0:onchip_memory2_0_s1_byteenable -> onchip_memory2_0:byteenable
+	signal mm_interconnect_0_onchip_memory2_0_s1_write                     : std_logic;                     -- mm_interconnect_0:onchip_memory2_0_s1_write -> onchip_memory2_0:write
+	signal mm_interconnect_0_onchip_memory2_0_s1_writedata                 : std_logic_vector(31 downto 0); -- mm_interconnect_0:onchip_memory2_0_s1_writedata -> onchip_memory2_0:writedata
+	signal mm_interconnect_0_onchip_memory2_0_s1_clken                     : std_logic;                     -- mm_interconnect_0:onchip_memory2_0_s1_clken -> onchip_memory2_0:clken
 	signal mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_readdata       : std_logic_vector(31 downto 0); -- intel_niosv_m_0:timer_sw_agent_readdata -> mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_readdata
 	signal mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_waitrequest    : std_logic;                     -- intel_niosv_m_0:timer_sw_agent_waitrequest -> mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_waitrequest
 	signal mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_address        : std_logic_vector(5 downto 0);  -- mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_address -> intel_niosv_m_0:timer_sw_agent_address
@@ -357,13 +364,6 @@ architecture rtl of nios is
 	signal mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_readdatavalid  : std_logic;                     -- intel_niosv_m_0:timer_sw_agent_readdatavalid -> mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_readdatavalid
 	signal mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_write          : std_logic;                     -- mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_write -> intel_niosv_m_0:timer_sw_agent_write
 	signal mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_writedata      : std_logic_vector(31 downto 0); -- mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_writedata -> intel_niosv_m_0:timer_sw_agent_writedata
-	signal mm_interconnect_0_onchip_memory2_0_s1_chipselect                : std_logic;                     -- mm_interconnect_0:onchip_memory2_0_s1_chipselect -> onchip_memory2_0:chipselect
-	signal mm_interconnect_0_onchip_memory2_0_s1_readdata                  : std_logic_vector(31 downto 0); -- onchip_memory2_0:readdata -> mm_interconnect_0:onchip_memory2_0_s1_readdata
-	signal mm_interconnect_0_onchip_memory2_0_s1_address                   : std_logic_vector(14 downto 0); -- mm_interconnect_0:onchip_memory2_0_s1_address -> onchip_memory2_0:address
-	signal mm_interconnect_0_onchip_memory2_0_s1_byteenable                : std_logic_vector(3 downto 0);  -- mm_interconnect_0:onchip_memory2_0_s1_byteenable -> onchip_memory2_0:byteenable
-	signal mm_interconnect_0_onchip_memory2_0_s1_write                     : std_logic;                     -- mm_interconnect_0:onchip_memory2_0_s1_write -> onchip_memory2_0:write
-	signal mm_interconnect_0_onchip_memory2_0_s1_writedata                 : std_logic_vector(31 downto 0); -- mm_interconnect_0:onchip_memory2_0_s1_writedata -> onchip_memory2_0:writedata
-	signal mm_interconnect_0_onchip_memory2_0_s1_clken                     : std_logic;                     -- mm_interconnect_0:onchip_memory2_0_s1_clken -> onchip_memory2_0:clken
 	signal intel_niosv_m_0_platform_irq_rx_irq                             : std_logic_vector(15 downto 0); -- irq_mapper:sender_irq -> intel_niosv_m_0:platform_irq_rx_irq
 	signal rst_controller_reset_out_reset                                  : std_logic;                     -- rst_controller:reset_out -> [intel_niosv_m_0:ndm_reset_in_reset, intel_niosv_m_0:reset_reset, irq_mapper:reset, mm_interconnect_0:intel_niosv_m_0_reset_reset_bridge_in_reset_reset, onchip_memory2_0:reset, rst_controller_reset_out_reset:in, rst_translator:in_reset]
 	signal rst_controller_reset_out_reset_req                              : std_logic;                     -- rst_controller:reset_req -> [onchip_memory2_0:reset_req, rst_translator:reset_req_in]

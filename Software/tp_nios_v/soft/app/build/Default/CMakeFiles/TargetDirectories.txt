@@ -1,0 +1,9 @@
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles/app.elf.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles/create-objdump.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles/niosv-stack-report.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles/create-hex.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles/edit_cache.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles/rebuild_cache.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/bsp/CMakeFiles/hal2_bsp.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/bsp/CMakeFiles/edit_cache.dir
+/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/bsp/CMakeFiles/rebuild_cache.dir
