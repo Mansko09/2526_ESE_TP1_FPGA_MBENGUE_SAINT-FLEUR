@@ -5,6 +5,10 @@
 `timescale 1 ps / 1 ps
 module nios (
 		input  wire       clk_clk,                          //                       clk.clk
+		input  wire       i2c_0_i2c_serial_sda_in,          //          i2c_0_i2c_serial.sda_in
+		input  wire       i2c_0_i2c_serial_scl_in,          //                          .scl_in
+		output wire       i2c_0_i2c_serial_sda_oe,          //                          .sda_oe
+		output wire       i2c_0_i2c_serial_scl_oe,          //                          .scl_oe
 		output wire [9:0] pio_0_external_connection_export, // pio_0_external_connection.export
 		input  wire       reset_reset_n                     //                     reset.reset_n
 	);
@@ -54,6 +58,11 @@ module nios (
 	wire         mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read;           // mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_read -> jtag_uart_0:av_read_n
 	wire         mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write;          // mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_write -> jtag_uart_0:av_write_n
 	wire  [31:0] mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_writedata;      // mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_writedata -> jtag_uart_0:av_writedata
+	wire  [31:0] mm_interconnect_0_i2c_0_csr_readdata;                           // i2c_0:readdata -> mm_interconnect_0:i2c_0_csr_readdata
+	wire   [3:0] mm_interconnect_0_i2c_0_csr_address;                            // mm_interconnect_0:i2c_0_csr_address -> i2c_0:addr
+	wire         mm_interconnect_0_i2c_0_csr_read;                               // mm_interconnect_0:i2c_0_csr_read -> i2c_0:read
+	wire         mm_interconnect_0_i2c_0_csr_write;                              // mm_interconnect_0:i2c_0_csr_write -> i2c_0:write
+	wire  [31:0] mm_interconnect_0_i2c_0_csr_writedata;                          // mm_interconnect_0:i2c_0_csr_writedata -> i2c_0:writedata
 	wire  [31:0] mm_interconnect_0_intel_niosv_m_0_dm_agent_readdata;            // intel_niosv_m_0:dm_agent_readdata -> mm_interconnect_0:intel_niosv_m_0_dm_agent_readdata
 	wire         mm_interconnect_0_intel_niosv_m_0_dm_agent_waitrequest;         // intel_niosv_m_0:dm_agent_waitrequest -> mm_interconnect_0:intel_niosv_m_0_dm_agent_waitrequest
 	wire  [15:0] mm_interconnect_0_intel_niosv_m_0_dm_agent_address;             // mm_interconnect_0:intel_niosv_m_0_dm_agent_address -> intel_niosv_m_0:dm_agent_address
@@ -82,9 +91,34 @@ module nios (
 	wire         mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_write;         // mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_write -> intel_niosv_m_0:timer_sw_agent_write
 	wire  [31:0] mm_interconnect_0_intel_niosv_m_0_timer_sw_agent_writedata;     // mm_interconnect_0:intel_niosv_m_0_timer_sw_agent_writedata -> intel_niosv_m_0:timer_sw_agent_writedata
 	wire  [15:0] intel_niosv_m_0_platform_irq_rx_irq;                            // irq_mapper:sender_irq -> intel_niosv_m_0:platform_irq_rx_irq
-	wire         rst_controller_reset_out_reset;                                 // rst_controller:reset_out -> [intel_niosv_m_0:ndm_reset_in_reset, intel_niosv_m_0:reset_reset, irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:intel_niosv_m_0_reset_reset_bridge_in_reset_reset, onchip_memory2_0:reset, pio_0:reset_n, rst_translator:in_reset]
+	wire         rst_controller_reset_out_reset;                                 // rst_controller:reset_out -> [i2c_0:rst_n, intel_niosv_m_0:ndm_reset_in_reset, intel_niosv_m_0:reset_reset, irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:intel_niosv_m_0_reset_reset_bridge_in_reset_reset, onchip_memory2_0:reset, pio_0:reset_n, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                             // rst_controller:reset_req -> [onchip_memory2_0:reset_req, rst_translator:reset_req_in]
 	wire         intel_niosv_m_0_dbg_reset_out_reset;                            // intel_niosv_m_0:dbg_reset_out_reset -> rst_controller:reset_in1
+
+	altera_avalon_i2c #(
+		.USE_AV_ST       (0),
+		.FIFO_DEPTH      (4),
+		.FIFO_DEPTH_LOG2 (2)
+	) i2c_0 (
+		.clk       (clk_clk),                               //            clock.clk
+		.rst_n     (~rst_controller_reset_out_reset),       //       reset_sink.reset_n
+		.intr      (),                                      // interrupt_sender.irq
+		.addr      (mm_interconnect_0_i2c_0_csr_address),   //              csr.address
+		.read      (mm_interconnect_0_i2c_0_csr_read),      //                 .read
+		.write     (mm_interconnect_0_i2c_0_csr_write),     //                 .write
+		.writedata (mm_interconnect_0_i2c_0_csr_writedata), //                 .writedata
+		.readdata  (mm_interconnect_0_i2c_0_csr_readdata),  //                 .readdata
+		.sda_in    (i2c_0_i2c_serial_sda_in),               //       i2c_serial.sda_in
+		.scl_in    (i2c_0_i2c_serial_scl_in),               //                 .scl_in
+		.sda_oe    (i2c_0_i2c_serial_sda_oe),               //                 .sda_oe
+		.scl_oe    (i2c_0_i2c_serial_scl_oe),               //                 .scl_oe
+		.src_data  (),                                      //      (terminated)
+		.src_valid (),                                      //      (terminated)
+		.src_ready (1'b0),                                  //      (terminated)
+		.snk_data  (16'b0000000000000000),                  //      (terminated)
+		.snk_valid (1'b0),                                  //      (terminated)
+		.snk_ready ()                                       //      (terminated)
+	);
 
 	nios_intel_niosv_m_0 intel_niosv_m_0 (
 		.clk                          (clk_clk),                                                        //                 clk.clk
@@ -242,6 +276,11 @@ module nios (
 		.intel_niosv_m_0_instruction_manager_rready        (intel_niosv_m_0_instruction_manager_rready),                     //                                            .rready
 		.clk_0_clk_clk                                     (clk_clk),                                                        //                                   clk_0_clk.clk
 		.intel_niosv_m_0_reset_reset_bridge_in_reset_reset (rst_controller_reset_out_reset),                                 // intel_niosv_m_0_reset_reset_bridge_in_reset.reset
+		.i2c_0_csr_address                                 (mm_interconnect_0_i2c_0_csr_address),                            //                                   i2c_0_csr.address
+		.i2c_0_csr_write                                   (mm_interconnect_0_i2c_0_csr_write),                              //                                            .write
+		.i2c_0_csr_read                                    (mm_interconnect_0_i2c_0_csr_read),                               //                                            .read
+		.i2c_0_csr_readdata                                (mm_interconnect_0_i2c_0_csr_readdata),                           //                                            .readdata
+		.i2c_0_csr_writedata                               (mm_interconnect_0_i2c_0_csr_writedata),                          //                                            .writedata
 		.intel_niosv_m_0_dm_agent_address                  (mm_interconnect_0_intel_niosv_m_0_dm_agent_address),             //                    intel_niosv_m_0_dm_agent.address
 		.intel_niosv_m_0_dm_agent_write                    (mm_interconnect_0_intel_niosv_m_0_dm_agent_write),               //                                            .write
 		.intel_niosv_m_0_dm_agent_read                     (mm_interconnect_0_intel_niosv_m_0_dm_agent_read),                //                                            .read
