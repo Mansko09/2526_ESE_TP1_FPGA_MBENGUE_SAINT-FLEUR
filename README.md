@@ -40,7 +40,7 @@ end architecture;
 
 2) Notre schéma :
 
-<img width="466" height="200" alt="image" src="https://github.com/user-attachments/assets/6346586b-656f-4260-912a-9ae1df243b96" />
+<img width="648" height="309" alt="image" src="https://github.com/user-attachments/assets/703cf03d-8d81-411b-a312-b8ebb3a3a3c2" />
 
 4) Schéma proposé par quartus:
 
