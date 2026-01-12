@@ -52,8 +52,7 @@ https://github.com/user-attachments/assets/0d36cc00-006d-4b81-8d19-2c59da1fe209
 
 7) Notre schéma :
 
-<img width="529" height="249" alt="image" src="https://github.com/user-attachments/assets/94570453-fdbc-443c-af33-27ba3aaa1aa7" />
-
+<img width="619" height="198" alt="image" src="https://github.com/user-attachments/assets/b94bdd9a-0f6d-4f7d-b81a-ae46ae046e5c" />
 
 8) Schéma proposé par quartus :
 
