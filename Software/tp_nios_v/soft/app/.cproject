@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
-		<cconfiguration id="de.marw.cmake.cdt.lsp.toolchain.cmake.815847080">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="de.marw.cmake.cdt.lsp.toolchain.cmake.815847080" moduleId="org.eclipse.cdt.core.settings" name="Default">
+		<cconfiguration id="de.marw.cmake.cdt.lsp.toolchain.cmake.913364818">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="de.marw.cmake.cdt.lsp.toolchain.cmake.913364818" moduleId="org.eclipse.cdt.core.settings" name="Default">
 				<externalSettings/>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.MachO64" point="org.eclipse.cdt.core.BinaryParser"/>
@@ -21,12 +21,12 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration buildProperties="" id="de.marw.cmake.cdt.lsp.toolchain.cmake.815847080" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
-					<folderInfo id="de.marw.cmake.cdt.lsp.toolchain.cmake.815847080.1066052475" name="/" resourcePath="">
-						<toolChain id="de.marw.cmake.cdt.lsp.toolchain.cmake.1578447946" name="CMake driven" superClass="de.marw.cmake.cdt.lsp.toolchain.cmake">
-							<targetPlatform id="de.marw.cmake.cdt.lsp.targetPlatform.cmake.1764877935" name="Any Platform" superClass="de.marw.cmake.cdt.lsp.targetPlatform.cmake"/>
-							<builder buildPath="/app/build/Default" id="de.marw.cmake.cdt.lsp.builder.portable.430633627" managedBuildOn="true" name="CMake Builder.Default" superClass="de.marw.cmake.cdt.lsp.builder.portable"/>
-							<tool id="de.marw.cmake.cdt.lsp.toolchain.tool.dummy.387641716" name="CMake driven Languages Proxy" superClass="de.marw.cmake.cdt.lsp.toolchain.tool.dummy"/>
+				<configuration buildProperties="" id="de.marw.cmake.cdt.lsp.toolchain.cmake.913364818" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="de.marw.cmake.cdt.lsp.toolchain.cmake.913364818.1534017245" name="/" resourcePath="">
+						<toolChain id="de.marw.cmake.cdt.lsp.toolchain.cmake.109291886" name="CMake driven" superClass="de.marw.cmake.cdt.lsp.toolchain.cmake">
+							<targetPlatform id="de.marw.cmake.cdt.lsp.targetPlatform.cmake.1382119930" name="Any Platform" superClass="de.marw.cmake.cdt.lsp.targetPlatform.cmake"/>
+							<builder buildPath="/app/build/Default" id="de.marw.cmake.cdt.lsp.builder.portable.911092742" managedBuildOn="true" name="CMake Builder.Default" superClass="de.marw.cmake.cdt.lsp.builder.portable"/>
+							<tool id="de.marw.cmake.cdt.lsp.toolchain.tool.dummy.1517330539" name="CMake driven Languages Proxy" superClass="de.marw.cmake.cdt.lsp.toolchain.tool.dummy"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -34,11 +34,11 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
 	</storageModule>
-	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="app.null.2032125282" name="app"/>
-	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="app.null.62907192" name="app"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

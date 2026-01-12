@@ -207,14 +207,14 @@ module nios_mm_interconnect_0_router
 
     // ( 0x30000 .. 0x30040 )
     if ( {address[RG:PAD2],{PAD2{1'b0}}} == 18'h30000   ) begin
-            src_channel = 6'b000010;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
+            src_channel = 6'b100000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
     end
 
     // ( 0x30040 .. 0x30080 )
     if ( {address[RG:PAD3],{PAD3{1'b0}}} == 18'h30040   ) begin
-            src_channel = 6'b100000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
+            src_channel = 6'b000010;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
     end
 
     // ( 0x30080 .. 0x30090 )

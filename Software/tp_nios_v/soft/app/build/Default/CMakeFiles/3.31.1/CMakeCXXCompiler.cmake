@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++")
+set(CMAKE_CXX_COMPILER "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "13.2.0")
@@ -25,10 +25,10 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 set(CMAKE_AR "riscv32-unknown-elf-ar")
-set(CMAKE_CXX_COMPILER_AR "/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc-ar")
-set(CMAKE_RANLIB "/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc-ranlib")
-set(CMAKE_LINKER "/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-ld")
+set(CMAKE_CXX_COMPILER_AR "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc-ar.exe")
+set(CMAKE_RANLIB "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-ld.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "NOTFOUND")
@@ -87,7 +87,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0;/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/riscv32-unknown-elf;/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/backward;/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include;/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include-fixed;/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0;C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/riscv32-unknown-elf;C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/c++/13.2.0/backward;C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include;C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include-fixed;C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

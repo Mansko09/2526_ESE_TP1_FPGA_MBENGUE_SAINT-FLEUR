@@ -20,13 +20,13 @@ architecture rtl of tp_nios_v is
 begin
      nios0 : entity nios.nios
 		port map (
-		clk_clk =>i_clk,
-		reset_reset_n =>i_rst_n,
-		pio_0_external_connection_export =>o_led,
-        i2c_0_i2c_serial_sda_in => s_i2c_sda_in,
-        i2c_0_i2c_serial_scl_in => s_i2c_scl_in,
-        i2c_0_i2c_serial_sda_oe => s_i2c_sda_oe,
-        i2c_0_i2c_serial_scl_oe => s_i2c_scl_oe
+			clk_clk =>i_clk,
+			reset_reset_n =>i_rst_n,
+			pio_0_external_connection_export =>o_led,
+			i2c_0_i2c_serial_sda_in => s_i2c_sda_in,
+			i2c_0_i2c_serial_scl_in => s_i2c_scl_in,
+			i2c_0_i2c_serial_sda_oe => s_i2c_sda_oe,
+			i2c_0_i2c_serial_scl_oe => s_i2c_scl_oe
 		);
 		
 		s_i2c_scl_in <= io_i2c_scl;

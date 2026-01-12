@@ -1,8 +1,8 @@
-# Install script for directory: /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app
+# Install script for directory: C:/tp_nios_v/soft/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/bsp")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,18 +34,18 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-objdump")
+  set(CMAKE_OBJDUMP "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/bsp/cmake_install.cmake")
+  include("C:/tp_nios_v/soft/app/build/Default/bsp/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/install_local_manifest.txt"
+  file(WRITE "C:/tp_nios_v/soft/app/build/Default/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/tp_nios_v/soft/app/build/Default/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

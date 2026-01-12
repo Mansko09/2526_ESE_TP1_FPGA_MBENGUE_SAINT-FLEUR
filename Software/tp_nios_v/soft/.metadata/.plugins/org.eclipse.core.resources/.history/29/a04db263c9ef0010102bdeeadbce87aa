@@ -1,0 +1,69 @@
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "unistd.h"
+#include <stdio.h>
+
+#define DELAY_US 200000
+
+//int main(void) //chenillard
+//{
+//    unsigned int led = 1;  // 0b0000000001 → LED0
+//
+//    printf("Chenillard demarre\r\n");
+//
+//    while (1)
+//    {
+//        IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, led);
+//        usleep(DELAY_US);
+//
+//        led <<= 1;  // décalage vers la LED suivante
+//
+//        if (led >= (1 << PIO_0_DATA_WIDTH))
+//            led = 1; // retour à LED0
+//    }
+//
+//    return 0;
+//}
+
+
+//lecture d'angle
+float read_angle(void)
+{
+    static float angle = -45.0f;
+    angle += 5.0f;
+    if (angle > 45.0f)
+        angle = -45.0f;
+    return angle;
+}
+
+unsigned int angle_to_led(float angle)
+{
+    int led_index;
+
+    if (angle > 45.0f)  angle = 45.0f;
+    if (angle < -45.0f) angle = -45.0f;
+
+    led_index = (int)((angle + 45.0f) * 9.0f / 90.0f);
+
+    return (1 << led_index);
+}
+
+int main(void)
+{
+    float angle;
+    unsigned int leds;
+
+    printf("Niveau a bulles demarre\r\n");
+
+    while (1)
+    {
+        angle = read_angle();           // capteur inclinaison
+        leds = angle_to_led(angle);     // conversion angle → LED
+
+        IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, leds);
+
+        usleep(DELAY_US);
+    }
+
+    return 0;
+}

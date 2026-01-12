@@ -661,3 +661,2319 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.
 	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-01-12 14:36:15.846 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 14:37:07.635
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 14:37:07.647
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 14:38:25.636
+!MESSAGE Error: Cannot run program "\usr\bin\gmake": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\usr\bin\gmake": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory$Builder.start(ProcessFactory.java:273)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:366)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:189)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.execute(CommandLauncherManager.java:146)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performExternalClean(CommonBuilder.java:1179)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1120)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1079)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:994)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:890)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:776)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 14:38:25.713
+!MESSAGE Error: Cannot run program "\usr\bin\gmake": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\usr\bin\gmake": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory$Builder.start(ProcessFactory.java:273)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:366)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:189)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.execute(CommandLauncherManager.java:146)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 14:40:57.052
+!MESSAGE Error: Cannot run program "\usr\bin\gmake": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\usr\bin\gmake": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory$Builder.start(ProcessFactory.java:273)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:366)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:189)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.execute(CommandLauncherManager.java:146)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 14:43:35.153
+!MESSAGE Error: Cannot run program "\usr\bin\gmake": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\usr\bin\gmake": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory$Builder.start(ProcessFactory.java:273)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:366)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:189)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.execute(CommandLauncherManager.java:146)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 14:45:59.352
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-01-12 15:02:54.494 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 15:03:16.460
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY com.ashling.riscfree.debug.niosv.import.wizard.cmake 4 4 2026-01-12 15:04:09.685
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.cdt.core.CCorePlugin$2.run(CCorePlugin.java:967)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:962)
+	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:957)
+	at com.ashling.riscfree.debug.niosv.cmake.wizard.ui.CmakeImportWizard$1.execute(CmakeImportWizard.java:87)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:112)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Contains: OK
+Contains: C:\tp_nios_v\soft\bsp overlaps the location of another project: 'bsp'
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2026-01-12 15:04:09.685
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2026-01-12 15:04:09.685
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2026-01-12 15:04:09.685
+!MESSAGE C:\tp_nios_v\soft\bsp overlaps the location of another project: 'bsp'
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-12 15:04:25.523
+!MESSAGE Indexed 'app' (1 sources, 0 headers) in 0,027 sec: 2 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-12 15:04:36.162
+!MESSAGE Indexed 'bsp' (88 sources, 86 headers) in 1,31 sec: 2 342 declarations; 5 624 references; 150 unresolved inclusions; 6 syntax errors; 463 unresolved names (5,5 %)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 15:04:53.290
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:16:44.419
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:16:44.590
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:21.607
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:22.343
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:22.344
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:22.344
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:32.501
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:32.672
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:33.114
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:18:33.224
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 15:18:33.573
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 53856 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 15:18:35.069
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:33:13.428
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:33:13.592
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 15:33:13.777
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 54299 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 15:33:14.908
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:42:15.768
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:42:22.070
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 15:42:28.853
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-01-12 15:42:29.199
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2026-01-12 15:42:36.739 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 15:43:02.617
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 15:43:02.634
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:43:11.149
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:43:11.312
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 15:43:11.551
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 54654 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 15:43:13.125
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:53:29.114
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:53:44.053
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 15:55:45.312
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-01-12 15:55:45.648
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2026-01-12 15:55:47.452 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 15:56:07.640
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 15:56:07.657
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:56:11.789
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:56:11.952
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 15:56:12.191
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55283 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 15:56:13.730
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:56:37.651
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:57:03.411
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:57:58.396
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:57:58.560
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 15:57:58.747
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55338 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 15:58:00.263
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:58:29.754
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 15:58:29.864
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 15:58:30.057
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55385 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 15:58:31.548
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:59:47.601
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 15:59:54.788
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:00:03.476
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:00:03.640
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:00:03.828
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55430 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:00:05.309
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:02:14.463
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:02:14.626
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:02:14.817
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55474 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:02:16.321
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 16:05:03.411
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:05:15.467
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:05:15.629
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:05:15.819
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55982 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:05:17.122
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2026-01-12 16:06:02.902
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Contains: Could not delete 'C:\tp_nios_v\soft\app\build\Default\app.elf'.
+org.eclipse.core.runtime.CoreException: Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:161)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2026-01-12 16:06:02.902
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2026-01-12 16:06:02.902
+!MESSAGE Could not delete 'C:\tp_nios_v\soft\app\build\Default\app.elf'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:161)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	... 17 more
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2026-01-12 16:06:02.903
+!MESSAGE Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+!STACK 0
+java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2026-01-12 16:06:09.764
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Contains: Could not delete 'C:\tp_nios_v\soft\app\build\Default\app.elf'.
+org.eclipse.core.runtime.CoreException: Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:161)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2026-01-12 16:06:09.765
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2026-01-12 16:06:09.765
+!MESSAGE Could not delete 'C:\tp_nios_v\soft\app\build\Default\app.elf'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:161)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	... 17 more
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2026-01-12 16:06:09.765
+!MESSAGE Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+!STACK 0
+java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:06:41.603
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:06:41.715
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:06:41.911
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 56518 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY com.ashling.riscfree.managedbuild.cross.intelriscv.core 4 1 2026-01-12 16:06:43.439
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:07:03.237
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:07:03.401
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:07:03.592
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 56547 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY com.ashling.riscfree.managedbuild.cross.intelriscv.core 4 1 2026-01-12 16:07:04.938
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:21:12.030
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:21:15.134
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:21:15.323
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 56881 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 16:21:18.751
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@4a33a5f3): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:21:18.751
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 16:21:18.753
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:21:18.754
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:21:50.443
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:21:50.453
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:21:50.652
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 56951 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 16:21:54.061
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@537ed014): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:21:54.062
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 16:21:54.063
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:21:54.063
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:22:00.259
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-01-12 16:07:19.180 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 16:23:10.205
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 16:23:10.222
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:23:30.885
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:23:34.012
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:23:34.252
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 57449 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 16:23:37.688
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@5b06cb7f): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:23:37.688
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 16:23:37.701
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:23:37.702
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:25:01.560
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:25:01.567
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:25:01.768
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 57982 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 16:25:05.211
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@455c3080): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:25:05.211
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 16:25:05.214
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:25:05.214
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:29:50.057
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:29:53.206
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:29:53.397
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 58119 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 16:29:56.795
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@316dcedc): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:29:56.795
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 16:29:56.796
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:29:56.796
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:31:14.021
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-01-12 16:31:44.338 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 16:32:05.897
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 16:32:05.913
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:32:53.375
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:32:53.540
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:32:53.769
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 58641 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:32:55.342
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:33:53.220
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:33:56.261
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:33:56.455
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 58681 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 16:33:59.874
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@4e2cd04b): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:33:59.874
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 16:33:59.878
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 16:33:59.879
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:34:03.474
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-01-12 16:34:09.018 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 16:34:27.574
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 16:34:27.593
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:35:06.886
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:35:07.051
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:35:07.291
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 59258 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:35:08.832
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:36:10.008
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:36:10.018
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:36:10.018
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:245)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:36:10.018
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:36:10.018
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 16:36:10.018
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:245)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:11.999
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:12.109
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:16.922
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:17.032
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:19.999
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:20.110
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:22.652
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:22.757
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:36:22.952
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 59304 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:36:24.459
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:44.865
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:36:44.986
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:36:45.176
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 59337 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:36:46.664
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:39:11.197
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:39:11.360
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:39:11.548
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 59431 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:39:13.077
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 16:55:34.931
+!MESSAGE Debug session 'app.elf(1)' is already running or not terminated completely.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2026-01-12 16:55:46.392
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Contains: Could not delete 'C:\tp_nios_v\soft\app\build\Default\app.elf'.
+org.eclipse.core.runtime.CoreException: Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:161)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2026-01-12 16:55:46.392
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2026-01-12 16:55:46.392
+!MESSAGE Could not delete 'C:\tp_nios_v\soft\app\build\Default\app.elf'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:161)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Caused by: java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	... 17 more
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2026-01-12 16:55:46.393
+!MESSAGE Could not delete: C:\tp_nios_v\soft\app\build\Default\app.elf.
+!STACK 0
+java.nio.file.FileSystemException: C:\tp_nios_v\soft\app\build\Default\app.elf: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:242)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:159)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:315)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:801)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:284)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:210)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2476)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:55:58.849
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 16:55:59.012
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 16:55:59.209
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 59751 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 16:56:00.698
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 16:56:41.335
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:488)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:407)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:553)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2937)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:2031)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:684)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:2004)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1961)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1947)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$2(StructuredViewer.java:1463)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1392)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:367)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1353)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1463)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:521)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1417)
+	at org.eclipse.cdt.internal.ui.editor.CContentOutlinerProvider.lambda$1(CContentOutlinerProvider.java:103)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 17:03:54.608
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 17:03:54.794
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 17:03:54.982
+!MESSAGE GDB SERVER COMMAND :C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 59956 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 17:03:56.457
+!MESSAGE C:\PROGRAMS\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\tp_nios_v\soft\app\build\Default\app.elf

@@ -1,19 +1,19 @@
 bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj: \
- /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/bsp/HAL/src/alt_putstr.c \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h \
- /home/knn64/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h
+ C:/tp_nios_v/soft/bsp/HAL/src/alt_putstr.c \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h \
+ C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h

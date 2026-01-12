@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/knn64/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake
+CMAKE_COMMAND = C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /home/knn64/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake -E rm -f
+RM = C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app
+CMAKE_SOURCE_DIR = C:/tp_nios_v/soft/app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default
+CMAKE_BINARY_DIR = C:/tp_nios_v/soft/app/build/Default
 
 # Utility rule file for niosv-stack-report.
 
@@ -69,7 +69,7 @@ include CMakeFiles/niosv-stack-report.dir/progress.make
 CMakeFiles/niosv-stack-report: app.elf.stack_report
 
 app.elf.stack_report: app.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Reporting memory available for stack + heap in app.elf."
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Reporting memory available for stack + heap in app.elf."
 	niosv-stack-report -p riscv32-unknown-elf- app.elf
 
 CMakeFiles/niosv-stack-report.dir/codegen:
@@ -89,6 +89,6 @@ CMakeFiles/niosv-stack-report.dir/clean:
 .PHONY : CMakeFiles/niosv-stack-report.dir/clean
 
 CMakeFiles/niosv-stack-report.dir/depend:
-	cd /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default /home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/app/build/Default/CMakeFiles/niosv-stack-report.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/tp_nios_v/soft/app C:/tp_nios_v/soft/app C:/tp_nios_v/soft/app/build/Default C:/tp_nios_v/soft/app/build/Default C:/tp_nios_v/soft/app/build/Default/CMakeFiles/niosv-stack-report.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/niosv-stack-report.dir/depend
 

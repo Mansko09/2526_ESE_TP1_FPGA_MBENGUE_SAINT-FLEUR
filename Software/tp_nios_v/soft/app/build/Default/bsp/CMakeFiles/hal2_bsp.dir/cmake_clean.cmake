@@ -165,6 +165,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj.d"
   "CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj"
   "CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj.d"
+  "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj"
+  "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj.d"
   "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj"
   "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj.d"
   "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj"

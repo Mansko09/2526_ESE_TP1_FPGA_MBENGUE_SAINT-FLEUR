@@ -62357,7 +62357,8 @@ reset_n => ~NO_FANOUT~
 |tp_nios_v|nios:nios0|nios_irq_mapper:irq_mapper
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
-sender_irq[0] <= <GND>
+receiver0_irq => sender_irq[0].DATAIN
+sender_irq[0] <= receiver0_irq.DB_MAX_OUTPUT_PORT_TYPE
 sender_irq[1] <= <GND>
 sender_irq[2] <= <GND>
 sender_irq[3] <= <GND>

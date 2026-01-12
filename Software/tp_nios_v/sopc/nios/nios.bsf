@@ -85,7 +85,7 @@ on the Quartus Prime software download page.
 		(text "export" (rect 213 195 462 400)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 179 211 388 435)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 213 235 468 480)(font "Arial" (color 0 0 0)))
-		(text " nios " (rect 460 256 956 522)(font "Arial" ))
+		(text " system " (rect 445 256 938 522)(font "Arial" ))
 		(line (pt 208 32)(pt 272 32)(line_width 1))
 		(line (pt 272 32)(pt 272 256)(line_width 1))
 		(line (pt 208 256)(pt 272 256)(line_width 1))

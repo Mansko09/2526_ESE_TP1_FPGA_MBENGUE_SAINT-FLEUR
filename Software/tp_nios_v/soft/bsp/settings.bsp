@@ -2,12 +2,12 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal2</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jan 5, 2026 5:17:00 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1767629820846</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/bsp</BspGeneratedLocation>
-        <BspSettingsFile>/home/knn64/git/2526_ESE_TP1_FPGA_MBENGUE_SAINT-FLEUR/Software/tp_nios_v/soft/bsp/settings.bsp</BspSettingsFile>
-        <SopcDesignFile>../../sopc/nios.sopcinfo</SopcDesignFile>
-        <SystemFileHash>45bbe16ae88823b849eac14c85691c5e18cf97b5b1a45983f3f829d23947f</SystemFileHash>
+        <BspGeneratedTimeStamp>12 janv. 2026 14:58:05</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1768226285316</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\tp_nios_v\soft\bsp</BspGeneratedLocation>
+        <BspSettingsFile>C:\tp_nios_v\soft\bsp\settings.bsp</BspSettingsFile>
+        <SopcDesignFile>..\..\sopc\nios.sopcinfo</SopcDesignFile>
+        <SystemFileHash>f527a55e5e252296bd87799e9ce378965e08c80f8e14854ebd8daba899ded6</SystemFileHash>
         <JdiFile>default</JdiFile>
         <Cpu>intel_niosv_m_0</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -618,14 +618,20 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>i2c_0</slaveDescriptor>
+                <addressRange>0x00030040 - 0x0003007F</addressRange>
+                <addressSpan>64</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>pio_0</slaveDescriptor>
-                <addressRange>0x00030040 - 0x0003004F</addressRange>
+                <addressRange>0x00030080 - 0x0003008F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00030050 - 0x00030057</addressRange>
+                <addressRange>0x00030090 - 0x00030097</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

@@ -13,12 +13,12 @@ preplace inst nios.intel_niosv_m_0.debug_reset_bridge -pg 1
 preplace inst nios.pio_0 -pg 1 -lvl 2 -y 440
 preplace inst nios.intel_niosv_m_0.dbg_mod -pg 1
 preplace inst nios.intel_niosv_m_0.reset_bridge -pg 1
-preplace netloc INTERCONNECT<net_container>nios</net_container>(SLAVE)onchip_memory2_0.reset1,(SLAVE)jtag_uart_0.reset,(MASTER)intel_niosv_m_0.dbg_reset_out,(SLAVE)intel_niosv_m_0.reset,(SLAVE)pio_0.reset,(SLAVE)i2c_0.reset_sink,(MASTER)clk_0.clk_reset,(SLAVE)intel_niosv_m_0.ndm_reset_in) 1 1 2 400 250 730
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)i2c_0.i2c_serial,(SLAVE)nios.i2c_0_i2c_serial) 1 0 3 NJ 210 NJ 210 NJ
-preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)nios.reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>nios</net_container>(SLAVE)jtag_uart_0.clk,(MASTER)clk_0.clk,(SLAVE)pio_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)intel_niosv_m_0.clk,(SLAVE)i2c_0.clock) 1 1 2 380 230 790
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.pio_0_external_connection,(SLAVE)pio_0.external_connection) 1 0 2 NJ 470 NJ
-preplace netloc FAN_OUT<net_container>nios</net_container>(SLAVE)intel_niosv_m_0.clk,(MASTER)clk_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)i2c_0.clock,(SLAVE)pio_0.clk,(SLAVE)jtag_uart_0.clk) 1 1 2 380 190 N
-preplace netloc INTERCONNECT<net_container>nios</net_container>(SLAVE)intel_niosv_m_0.timer_sw_agent,(MASTER)intel_niosv_m_0.data_manager,(SLAVE)onchip_memory2_0.s1,(SLAVE)i2c_0.csr,(SLAVE)intel_niosv_m_0.dm_agent,(SLAVE)jtag_uart_0.avalon_jtag_slave,(MASTER)intel_niosv_m_0.instruction_manager,(SLAVE)pio_0.s1) 1 1 2 420 230 770
-levelinfo -pg 1 0 170 940
-levelinfo -hier nios 180 210 530 800 930
+preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.i2c_0_i2c_serial,(SLAVE)i2c_0.i2c_serial) 1 0 3 NJ 190 NJ 190 NJ
+preplace netloc INTERCONNECT<net_container>nios</net_container>(SLAVE)i2c_0.reset_sink,(SLAVE)intel_niosv_m_0.reset,(SLAVE)pio_0.reset,(SLAVE)onchip_memory2_0.reset1,(MASTER)intel_niosv_m_0.dbg_reset_out,(SLAVE)intel_niosv_m_0.ndm_reset_in,(SLAVE)jtag_uart_0.reset,(MASTER)clk_0.clk_reset) 1 1 2 400 250 730
+preplace netloc INTERCONNECT<net_container>nios</net_container>(MASTER)intel_niosv_m_0.data_manager,(SLAVE)pio_0.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(MASTER)intel_niosv_m_0.instruction_manager,(SLAVE)i2c_0.csr,(SLAVE)intel_niosv_m_0.timer_sw_agent,(SLAVE)onchip_memory2_0.s1,(SLAVE)intel_niosv_m_0.dm_agent) 1 1 2 420 210 770
+levelinfo -pg 1 0 170 960
+levelinfo -hier nios 180 210 530 820 950

@@ -1,0 +1,101 @@
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "unistd.h"
+#include <stdio.h>
+
+#define DELAY_US 200000
+#define ADXL345_ADDR        0x53  // Adresse I2C de l'ADXL345
+#define DEVID_REG           0x00
+#define POWER_CTL_REG       0x2D
+#define DATA_X0_REG         0x32
+
+//int main(void) //chenillard
+//{
+//    unsigned int led = 1;  // 0b0000000001 → LED0
+//
+//    printf("Chenillard demarre\r\n");
+//
+//    while (1)
+//    {
+//        IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, led);
+//        usleep(DELAY_US);
+//
+//        led <<= 1;  // décalage vers la LED suivante
+//
+//        if (led >= (1 << PIO_0_DATA_WIDTH))
+//            led = 1; // retour à LED0
+//    }
+//
+//    return 0;
+//}
+
+
+// Fonction pour écrire un octet dans un registre
+void adxl345_write_reg(alt_avalon_i2c_dev *i2c_dev, uint8_t reg, uint8_t value) {
+    uint8_t txbuffer[2] = {reg, value};
+    alt_avalon_i2c_master_tx_rx(i2c_dev, txbuffer, 2, NULL, 0, ALT_AVALON_I2C_NO_INTERRUPTS);
+}
+
+// Fonction pour lire des octets d'un registre
+void adxl345_read_regs(alt_avalon_i2c_dev *i2c_dev, uint8_t reg, uint8_t *buffer, int len) {
+    uint8_t txbuffer[1] = {reg};
+    alt_avalon_i2c_master_tx_rx(i2c_dev, txbuffer, 1, buffer, len, ALT_AVALON_I2C_NO_INTERRUPTS);
+}
+
+// Fonction pour initialiser l'ADXL345
+int adxl345_init(alt_avalon_i2c_dev *i2c_dev) {
+    uint8_t devid;
+    adxl345_read_regs(i2c_dev, DEVID_REG, &devid, 1);
+    if (devid != 0xE5) {
+        printf("Erreur: ADXL345 non détecté (DEVID=0x%02X)\n", devid);
+        return -1;
+    }
+    printf("ADXL345 détecté (DEVID=0x%02X)\n", devid);
+
+    // Activer le mode mesure
+    adxl345_write_reg(i2c_dev, POWER_CTL_REG, 0x08);
+    return 0;
+}
+
+// Fonction pour lire les axes en g
+void adxl345_read_axes(alt_avalon_i2c_dev *i2c_dev, float *x_g, float *y_g, float *z_g) {
+    uint8_t rxbuffer[6];
+    adxl345_read_regs(i2c_dev, DATA_X0_REG, rxbuffer, 6);
+
+    int16_t x = (rxbuffer[1] << 8) | rxbuffer[0];
+    int16_t y = (rxbuffer[3] << 8) | rxbuffer[2];
+    int16_t z = (rxbuffer[5] << 8) | rxbuffer[4];
+
+    *x_g = x * 0.004f;
+    *y_g = y * 0.004f;
+    *z_g = z * 0.004f;
+}
+
+// Calcul approximatif de l'angle d'inclinaison (niveau à bulles)
+float calculate_tilt(float x_g, float y_g) {
+    // angle en degrés par rapport à l'horizontale
+    return atan2f(y_g, x_g) * 180.0f / 3.14159265f;
+}
+
+int main() {
+    alt_avalon_i2c_dev *i2c_dev = alt_avalon_i2c_open("/dev/i2c_0");
+    if (!i2c_dev) {
+        printf("Erreur: impossible d'ouvrir le périphérique I2C\n");
+        return -1;
+    }
+
+    if (adxl345_init(i2c_dev) != 0) return -1;
+
+    while (1) {
+        float x, y, z;
+        adxl345_read_axes(i2c_dev, &x, &y, &z);
+
+        float angle = calculate_tilt(x, y);
+
+        printf("X=%.3fg Y=%.3fg Z=%.3fg Angle=%.1f°\n", x, y, z, angle);
+
+        usleep(200000); // 200 ms
+    }
+
+    return 0;
+}
