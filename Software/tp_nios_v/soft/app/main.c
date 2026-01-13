@@ -135,17 +135,6 @@ int main() {
 
     if (adxl345_init(i2c_dev) != 0) return -1;
 
-//    while (1) {
-//        float x, y, z;
-//        adxl345_read_axes(i2c_dev, &x, &y, &z);
-//
-//        float angle = calculate_tilt(x, y);
-//
-//        printf("X=%.3fg Y=%.3fg Z=%.3fg Angle=%.1f°\n", x, y, z, angle);
-//
-//        usleep(200000); // pause 200 ms
-//    }
-
     while (1) {
         float x, y, z;
         adxl345_read_axes(i2c_dev, &x, &y, &z);
