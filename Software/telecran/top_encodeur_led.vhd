@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity top_encoder_leds is
     port (
-        i_clk    : in  std_logic;                     -- Horloge de la carte (généralement 50 MHz)
-        i_rst_n  : in  std_logic;                     -- Reset actif bas (bouton ou pin)
+        i_clk    : in  std_logic;                    
+        i_rst_n  : in  std_logic;                     
         
         -- Signaux de l'encodeur incrémental
         enc_A    : in  std_logic;
@@ -28,7 +28,7 @@ end entity top_encoder_leds;
 architecture rtl of top_encoder_leds is
 
     -- Constante pour l'encodeur
-    constant MAX_COUNT     : natural := 480;  -- Résolution complète (480 pas par tour typique)
+    constant MAX_COUNT     : natural := 480; 
     
     -- Signaux internes
     signal pos             : natural range 0 to MAX_COUNT := 0;  -- Position actuelle
@@ -63,7 +63,6 @@ begin
     red_B: rising_edge_detect  port map (i_clk => i_clk, A => enc_B, E => b_rising);
     fed_B: falling_edge_detect port map (i_clk => i_clk, A => enc_B, E => b_falling);
 
-    -- Processus principal de l'encodeur (logique corrigée)
     encoder_proc: process(i_clk, i_rst_n)
         variable dir : integer range -1 to 1 := 0;
     begin
@@ -100,7 +99,7 @@ begin
             -- Calcul du segment (0 à 9)
             segment := pos / 48;   -- Division entière
 
-            -- Allume les LEDs de 0 à segment (bargraph progressif)
+            -- Allume les LEDs de 0 à segment 
             led_vector <= (others => '0');  -- Tout éteint d'abord
             if segment > 0 then
                 led_vector(segment-1 downto 0) <= (others => '1');  -- Allume les LEDs inférieures
