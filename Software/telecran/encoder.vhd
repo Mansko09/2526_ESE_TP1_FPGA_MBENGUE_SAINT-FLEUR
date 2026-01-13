@@ -19,13 +19,13 @@ end entity encoder;
 architecture rtl of encoder is
 
     --------------------------------------------------------------------
-    -- Input synchronization (equivalent to A1/A2, B1/B2)
+    -- Input synchronization 
     --------------------------------------------------------------------
     signal A1, A2 : std_logic := '0';
     signal B1, B2 : std_logic := '0';
 
     --------------------------------------------------------------------
-    -- Debounce logic (same principle as the working TP encoder)
+    -- Debounce logic 
     --------------------------------------------------------------------
     signal A_debounced, B_debounced : std_logic := '0';
     signal A_prev, B_prev           : std_logic := '0';
